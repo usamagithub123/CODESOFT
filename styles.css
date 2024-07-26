@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+    height: auto; /* Auto height to fit content */
+    padding: 20px 40px; /* Padding for left and right */
+    background: #000; /* Background color without image */
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0; /* Padding top and bottom for nav */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for nav */
+}
+
+.logo h2 {
+    color: #fff;
+    font-size: 32px;
+}
+.logo .logo-u {
+    color: gold; /* Color for the letter U */
+    font-size: 36px; /* Font size for the letter U */
+    display: inline-block; /* Ensure the text shadows apply correctly */
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8), /* Larger glow effect */
+        0 0 20px rgba(255, 255, 255, 0.6), /* Even larger glow */
+        0 0 30px rgba(255, 255, 255, 0.4), /* Extreme glow effect */
+        0 0 40px rgba(255, 215, 0, 0.6); /* Glowing yellowish effect */
+    background: linear-gradient(145deg, #fff, #ffd700); /* Gradient background for shine */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent for gradient effect */
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: gold; /* Change to your desired hover color */
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+    background: #080808; /* Background color to match the body */
+}
+
+.hero {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between text and image */
+    gap: 20px; /* Small gap between the text and image */
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.text-content {
+    flex: 1; /* Allow text content to take available space */
+}
+
+.text-content h1 .logo-u {
+    color: gold; /* Color for "Usama" */
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8), /* Larger glow effect */
+        0 0 20px rgba(255, 255, 255, 0.6), /* Even larger glow */
+        0 0 30px rgba(255, 255, 255, 0.4), /* Extreme glow effect */
+        0 0 40px rgba(255, 215, 0, 0.6); /* Glowing yellowish effect */
+}
+
+.image-content {
+    flex: 1; /* Allow image content to take available space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+
+.background-image {
+    max-width: 80%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.hero p {
+    font-size: 20px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Space below the paragraph */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Space below the heading */
+}
+#about{
+    padding: 80px 0;
+    color: #ababab;
+    margin: 30px 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    border: 4px solid rgba(128, 128, 128, 0.5); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+.about-col-2{
+    flex-basis: 55%;
+}
+.sub{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #ffd700;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 15px 0;
+}
+.tab-contents ul li span{
+    color: #ffd700;
+    font-size: 14px;
+}
+#project{
+    padding: 30px 0;
+
+}
+.project-list{
+   display: flex;
+    flex: 1;
+    justify-content: space-around;
+    max-width: 80%;
+    gap: 30px;
+    margin-top: 50px;
+}
+.project-list img {
+    width: 100%; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    border: 4px solid rgba(128, 128, 128, 0.5); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+} 
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ffd700);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 60px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #080808;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid gold;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: gold;
+
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: gold;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  display: inline-block;
+  color: #ababab;
+  transition: transform 0.5s ease-in-out;
+}
+.social-icons a :hover{
+    color: gold;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: gold;
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: gold;
+}
